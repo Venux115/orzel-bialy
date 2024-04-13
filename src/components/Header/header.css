@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.header_list{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.header_list_itens{
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.header_list_itens:hover{
+    border-bottom: 5px solid var(--second);
+    font-size: 1.5rem;
+}
+
+.header_list_itens:active{
+    border-bottom: 5px solid var(--second);
+    font-size: 1.2rem;
+}
+
+.btn_contact{
+    padding: 1rem 0;
+    width: 12rem;
+    font-weight: 600;
+    border: solid 3px var(--second);
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1rem;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.btn_contact:hover{
+    background-color: var(--second);
+    color: var(--first);
+}
+
+.btn_contact:active{
+   background-color: var(--third);
+   border: solid 3px var(--third);
+}
