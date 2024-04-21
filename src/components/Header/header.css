@@ -1,53 +1,81 @@
-.header{
+.header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
     padding: 1rem 3rem;
+    /* background-color: aqua; */
+    position: fixed;
+    width: 100%;
+    z-index: 0;
 }
 
-.header_list{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    list-style: none;
-}
-
-.header_list_itens{
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: 300ms;
-    cursor: pointer;
-}
-
-.header_list_itens:hover{
-    border-bottom: 5px solid var(--second);
-    font-size: 1.5rem;
-}
-
-.header_list_itens:active{
-    border-bottom: 5px solid var(--second);
-    font-size: 1.2rem;
-}
-
-.btn_contact{
-    padding: 1rem 0;
-    width: 12rem;
-    font-weight: 600;
-    border: solid 3px var(--second);
-    border-radius: 10px;
+.toggle_button {
     background-color: transparent;
-    font-size: 1rem;
-    transition: 300ms;
-    cursor: pointer;
+    border: none;
+    font-size: 2rem;
 }
 
-.btn_contact:hover{
-    background-color: var(--second);
-    color: var(--first);
+.btn_contact {
+    display: none;
 }
 
-.btn_contact:active{
-   background-color: var(--third);
-   border: solid 3px var(--third);
+.header_list {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding: 1rem 2.5rem;
+        height: 5rem;
+    }
+    .header_list {
+        display: flex;
+        list-style: none;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        z-index: 1000;
+        position: relative;
+    }
+
+    .btn_contact {
+        display: block;
+        padding: 1rem 0;
+        width: 12rem;
+        font-weight: 600;
+        border: solid 3px var(--second);
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 1rem;
+        transition: 300ms;
+        cursor: pointer;
+    }
+    .btn_contact:hover {
+        background-color: var(--second);
+        color: var(--first);
+    }
+
+    .btn_contact:active {
+        background-color: var(--third);
+        border: solid 3px var(--third);
+    }
+
+    .list_itens {
+        font-size: 1.5rem;
+        font-weight: 600;
+        transition: 300ms;
+        cursor: pointer;
+        transition: 300ms;
+    }
+    .list_itens:hover {
+        border-bottom: 5px solid var(--second);
+        font-size: 2rem;
+    }
+
+    .list_itens:active {
+        border-bottom: 5px solid var(--second);
+        font-size: 1.2rem;
+    }
 }
