@@ -3,6 +3,8 @@ import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import logo from "../../Assets/logo_orzelBialy_500.png"
+import logoNome from "../../Assets/logoNome_orzelBialy_500.png"
 
 function Header() {
     const [active, setActive] = useState(false);
@@ -13,7 +15,7 @@ function Header() {
     return (
         <div>
             <nav className="header">
-                <img src="#" alt="logo da do grupo Orzel bialy" />
+                <img className="header_logo" src={logoNome} alt="logo da do grupo Orzel bialy" />
 
                 <ul className="header_list ">
                     <li className="list_itens">Home</li>

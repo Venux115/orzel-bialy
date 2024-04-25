@@ -10,7 +10,7 @@
     padding: 1rem;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: .5rem;
 }
 
@@ -23,16 +23,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: .5rem;
 
     list-style: none;
-    background-color: aqua;
+    background-color: var(--primary);
     padding: 1rem;
 }
 
 .toggle_list_itens{
-    font-size: 1.5rem;
+    font-size: 1.5rem;  
     font-weight: 600;
     transition: 300ms;
     cursor: pointer;
